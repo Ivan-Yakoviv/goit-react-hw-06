@@ -50,6 +50,8 @@ const App = () => {
   return (
     <>
       <h1>Phonebook</h1>
+      <ContactForm />
+      <SearchBox />
       {/* <ContactForm onSubmit={addContact} />
       <SearchBox value={filter} onChange={handleChange} /> */}
       <ContactList contacts={contacts} />
