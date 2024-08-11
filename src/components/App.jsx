@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "./App.css";
-import { nanoid } from "nanoid";
+// import { nanoid } from "nanoid";
 import ContactList from "./ContactList/ContactList";
 import SearchBox from "./SearchBox/SearchBox";
 import ContactForm from "./ContactForm/ContactForm";
-import { useSelector } from "react-redux";
-import { selectContacts } from "../redux/contacts/selectors";
+// import { useSelector } from "react-redux";
+// import { selectContacts } from "../redux/contacts/selectors";
 
 const App = () => {
   // const [contacts, setContacts] = useState(() => {
@@ -45,16 +45,14 @@ const App = () => {
   //   contact.name.toLowerCase().includes(filter.toLowerCase())
   // );
 
-  const contacts = useSelector(selectContacts);
+  // const contacts = useSelector(selectContacts);
 
   return (
     <>
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
-      {/* <ContactForm onSubmit={addContact} />
-      <SearchBox value={filter} onChange={handleChange} /> */}
-      <ContactList contacts={contacts} />
+      <ContactList />
     </>
   );
 };
